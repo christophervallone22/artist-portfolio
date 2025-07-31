@@ -1,11 +1,11 @@
-//   https://script.google.com/macros/s/AKfycbx4sCrsq4DhYwdqjzd4OtHUT2iRvZEPn7TFFlcSplxDgR__QCoSo6dChJQjQEE6mVIYqg/exec
+//   https://script.google.com/macros/s/AKfycbyjoQiPqyo-UBKzzD6By5lgMrl6Cr4X8jtuWJXP9VlizvQshxS9NrijLFV7orcVOfTe/exec
 document.getElementById("signup-form").addEventListener("submit", function (e) {
     e.preventDefault();
 
     const email = document.getElementById("email").value;
     const message = document.getElementById("message"):
 
-    // fetch("https://script.google.com/macros/s/AKfycbx4sCrsq4DhYwdqjzd4OtHUT2iRvZEPn7TFFlcSplxDgR__QCoSo6dChJQjQEE6mVIYqg/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbyjoQiPqyo-UBKzzD6By5lgMrl6Cr4X8jtuWJXP9VlizvQshxS9NrijLFV7orcVOfTe/exec", {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
