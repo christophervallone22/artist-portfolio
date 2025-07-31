@@ -5,12 +5,12 @@ document.getElementById("signup-form").addEventListener("submit", function (e) {
     const email = document.getElementById("email").value;
     const message = document.getElementById("message"):
 
-    fetch("https://script.google.com/macros/s/AKfycbx4sCrsq4DhYwdqjzd4OtHUT2iRvZEPn7TFFlcSplxDgR__QCoSo6dChJQjQEE6mVIYqg/exec", {
+    // fetch("https://script.google.com/macros/s/AKfycbx4sCrsq4DhYwdqjzd4OtHUT2iRvZEPn7TFFlcSplxDgR__QCoSo6dChJQjQEE6mVIYqg/exec", {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: `email=${encodedURIComponent(email)}`
-    })
+    }) 
     .then(() => {
         message.textContent = "Thank you for subscribing!";
         message.style.color = "green";
