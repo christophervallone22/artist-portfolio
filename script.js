@@ -2,8 +2,8 @@
 document.getElementById("signup-form").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message"):
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message"):
 
     fetch("https://script.google.com/macros/s/AKfycbyjoQiPqyo-UBKzzD6By5lgMrl6Cr4X8jtuWJXP9VlizvQshxS9NrijLFV7orcVOfTe/exec", {
         method: "POST",
